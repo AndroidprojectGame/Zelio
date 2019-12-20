@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_rl"
+    tools:context="com.chaudhary.zelio.AllreadyHaveAccount">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/app_resources_profile_user_icon"
+                    android:id="@+id/iv_image"
+                    android:text="Native Name"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_profiletext"
+                    android:textColor="@color/tv_bgcolor"
+                    android:textSize="18sp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Help us find you..."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/app_resources_profile_mobile_icon"
+                    android:text="Native Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/editextcolor"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="80dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_phoneNumber"
+                    android:layout_gravity="center_vertical"
+                    android:hint="+910000000000"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:textColor="@color/editextcolor"
+                    android:textCursorDrawable="@drawable/cursor_pipe_color"
+                    android:backgroundTint="@color/edittext_backgroundcolor"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="80dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/edittext_backgroundcolor"
+                    android:text="An OTP will be sent to this number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/editextcolor"
+                    android:text="OR"
+                    android:textSize="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/app_resources_profile_link_icon"
+                    android:text="Native Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/editextcolor"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Login With"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+
+                <com.google.android.gms.common.SignInButton
+                    android:onClick="loginWithGmail"
+                    android:layout_weight="1"
+                    android:id="@+id/bt_SignIn"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/google_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/next"
+                android:textColorLink="@color/edittext_backgroundcolor"
+                android:autoLink="all"
+                android:onClick="nextButtonClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

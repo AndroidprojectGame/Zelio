@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chaudhary.zelio.MainActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <ImageView
+                android:id="@+id/image_first"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/app_resources_screen2_illustrations_home_illustration"/>
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/app_resources_screen2_illustrations_no_zelio_found"/>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="OOPS!"
+                android:textSize="22dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="8dp"
+                android:text="Could not find your device,\n
+please make sure that is ON"
+                android:gravity="center"
+                android:textColor="@color/editextcolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_searchAgain"
+                android:text="@string/searchAgain"
+                android:textColorLink="@color/edittext_backgroundcolor"
+                android:autoLink="all"
+                android:onClick="searchAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

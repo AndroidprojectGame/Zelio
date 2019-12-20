@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Zelio</string>
+    <string name="alreadyaccount"><a href="http://www.bla.com">Allready  have an account</a></string>
+    <string name="searchAgain"><a href="http://www.bla.com">Search Again</a></string>
+    <string name="next"><a href="http://www.bla.com">Next</a></string>
+
+    <string name="action_logout">Logout</string>
+    <string name="action_disconnect">Disconnect</string>
+
+    <string name="facebook_app_id">1759085480821754</string>
+</resources>

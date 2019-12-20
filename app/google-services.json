@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "232120651768",
+    "firebase_url": "https://zelio-34e39.firebaseio.com",
+    "project_id": "zelio-34e39",
+    "storage_bucket": "zelio-34e39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232120651768:android:d31c15518d922526",
+        "android_client_info": {
+          "package_name": "com.chaudhary.zelio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232120651768-aicrdgv69chsaflucuqnv8ffs0i2m836.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6O3m6rnNjrRCwzOC0KRklf55hMn--Wx0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
